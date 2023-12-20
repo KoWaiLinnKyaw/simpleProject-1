@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Start */
+.header {
+    text-align: center;
+    color: darkblue;
+    padding: 15px 0px;
+    line-height: 35px;
+}
+
+/* Header End */
+
+/* Nav Start */
+.topnav {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.topnav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+}
+
+.topnav a.active {
+    background-color: red;
+    font-weight: bold;
+    float: right;
+}
+
+.topnav a:hover:not(.active) {
+    background-color: rgb(204, 247, 77);
+    color: darkblue;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:600px) {
+    .topnav a {
+        float: none;
+        background-color: #000000;
+    }
+
+    .topnav a.active {
+        float: none;
+    }
+}
+
+/* Nav End */
+
+/* Main Start */
+.main {
+    background: url(./image/mback.jpg) #e1e1e1 no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 120px 0px;
+}
+
+.main h1 {
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 4px #000000;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+/* Main End */
+
+/* Content Start */
+.row {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    border-bottom: 1px solid black;
+}
+
+.content {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 30px 10px;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.content h3,
+.content p {
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width:600px) {
+    .content {
+        width: 100%;
+    }
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content End */
+
+/* Footer Start */
+.footer {
+    font-family: monospace;
+    padding: 10px 0px;
+    text-align: center;
+    background: #ddd url(./image/hback.jpg) no-repeat;
+    background-size: cover;
+}
+
+.footer .date {
+    padding: 5px 0px;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+/* Footer End */
